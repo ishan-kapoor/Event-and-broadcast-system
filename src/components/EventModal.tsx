@@ -59,7 +59,7 @@ function EventModal({ event, onClose, onSuccess }: EventModalProps) {
       if (axios.isAxiosError(err) && err.response?.data?.message) {
         setError(err.response.data.message);
       } else {
-        setError('New Event Details sent to the Admin for final Deployment!');
+        setError('New Event details sent to Master Admin for final review!');
       }
     } finally {
       setIsLoading(false);
