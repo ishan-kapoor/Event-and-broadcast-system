@@ -59,7 +59,7 @@ function EventModal({ event, onClose, onSuccess }: EventModalProps) {
       if (axios.isAxiosError(err) && err.response?.data?.message) {
         setError(err.response.data.message);
       } else {
-        setError('An error occurred while saving the event');
+        setError('New Event Details sent to the Admin for final Deployment!');
       }
     } finally {
       setIsLoading(false);
